@@ -2,7 +2,7 @@
 <!--<input type="text" class="form-control" (input)="onUpdateServerName($event)">-->
 <!-- two-way-databinding -->
 <input type="text" class="form-control" [(ngModel)]="serverName">
-<p>{{serverName}}</p>
+<!--<p>{{serverName}}</p>-->
 <!-- Property binding: When the state of the property change in the class the DOM change dynamically -->
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onServerCreate()">Add server</button>
 <!--<p>{{allowNewServer}}</p>-->
