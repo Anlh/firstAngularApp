@@ -1,6 +1,18 @@
 <ol>
-  <li>Add a Input field which updates a property ('username') via Two-Way-Binding</li>
-  <li>Output the username property via String Interpolation (in a paragraph below the input)</li>
-  <li>Add a button which may only be clicked if the username is NOT an empty string</li>
-  <li>Upon clicking the button, the username should be reset to an empty string</li>
+    <li>Add a Input field which updates a property ('username') via Two-Way-Binding</li>
+    <li>Output the username property via String Interpolation (in a paragraph below the input)</li>
+    <li>Add a button which may only be clicked if the username is NOT an empty string</li>
+    <li>Upon clicking the button, the username should be reset to an empty string</li>
 </ol>
+<hr>
+<label for="username">User name</label>
+<input id="username" type="text" class="form-control" [(ngModel)]="userName">
+<p>{{userName}}</p>
+
+<!-- We can call a method to check if the username is empty or to reset the username -->
+<!--<button class="btn btn-primary" (click)="onResetUserName()" [disabled]="isUserNameEmpty()">Reset Username</button></button>-->
+
+<!-- Or we can evaluate expression directly in property binding like this or the event click -->
+<button class="btn btn-primary" (click)="userName = ''" [disabled]="userName === ''">Reset Username</button>
+
+
