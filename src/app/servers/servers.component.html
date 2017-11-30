@@ -6,6 +6,15 @@
 <!-- Property binding: When the state of the property change in the class the DOM change dynamically -->
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onServerCreate()">Add server</button>
 <!--<p>{{allowNewServer}}</p>-->
-<p>{{serverCreationStatus}}</p>
+<!--<p>{{serverCreationStatus}}</p>-->
+
+<!-- [ ngIf Angular Directive ]-->
+<p *ngIf="serverCreated; else noServer">Server was created, server name is {{ serverName }}</p>
+<!-- Else condition -->
+<ng-template #noServer>
+    <p>No server was created!</p>
+</ng-template>
+
+<app-server></app-server>
 <app-server></app-server>
 
