@@ -1,6 +1,6 @@
-# MyFirstApp
+# N5CompleteGuide
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
 ## Development server
 
@@ -25,7 +25,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-## Create components with the CLI
-
-Run `ng generate component` [name of the component]. Or abbreviated `ng g c` [name of the component] 
