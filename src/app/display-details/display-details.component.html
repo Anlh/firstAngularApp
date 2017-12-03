@@ -1,0 +1,11 @@
+<button class="btn btn-primary" (click)="onShowDetails($event)">Display details</button>
+<p *ngIf="showDetails">Secret password = 'tuna'</p>
+
+<ol>
+    <li *ngFor="let itemLog of log; index as i;"
+        [ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'white'}"
+        [ngClass]="{'white-color': i >= 5 }">
+        {{itemLog}}
+    </li>
+</ol>
+
