@@ -29,3 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Create components with the CLI
 
 Run `ng generate component` [name of the component]. Or abbreviated `ng g c` [name of the component] 
+
+## Create new Project with the CLI
+
+Run `ng new` [name of the project]
