@@ -28,3 +28,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Install bootstrap from terminal
 Run `npm install --save bootstrap`
+
+## Create a component without the spec.ts file
+Run `ng g c [component name] --spec false`
+
+## Create a component nested in another folder
+Run `ng g c [path/name_component]`
