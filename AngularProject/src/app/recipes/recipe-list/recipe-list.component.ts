@@ -9,7 +9,11 @@ import {Recipe} from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
     public recipes: Recipe[] = [
-        new Recipe('Receita francezinha', 'Descriçao da francezinha', 'http://pictures.ozy.com/pictures/1500xany/4/4/5/102445_portugal3.jpg')
+        new Recipe(
+            'Receita francezinha',
+            'Descriçao da francezinha',
+            'http://pictures.ozy.com/pictures/1500xany/4/4/5/102445_portugal3.jpg'
+        )
     ];
 
     constructor() {
