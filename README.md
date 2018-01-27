@@ -1,6 +1,6 @@
-# AngularProject
+# N5CompleteGuide
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
 ## Development server
 
@@ -25,12 +25,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-## Install bootstrap from terminal
-Run `npm install --save bootstrap`
-
-## Create a component without the spec.ts file
-Run `ng g c [component name] --spec false`
-
-## Create a component nested in another folder
-Run `ng g c [path/name_component]`
