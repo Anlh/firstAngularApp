@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-xs-12">
+        <p>Add new Servers or blueprints!</p>
+        <label>Server Name</label>
+        <!-- Two way data binding Method -->
+        <!--<input type="text" class="form-control" [(ngModel)]="newServerName">-->
+        <!-- Use local reference instead of two way data binding above to retrieve data from the the element -->
+        <input
+                type="text"
+                class="form-control"
+                #serverNameInput
+        >
+        <label>Server Content</label>
+        <!--<input type="text" class="form-control" [(ngModel)]="newServerContent">-->
+        <!--<input
+                type="text"
+                class="form-control"
+                #serverContentInput
+        >-->
+        <!-- We can also use the @ViewChild decorator from the Angular/core to get a reference for this element, although it's not recommended  -->
+        <input
+                type="text"
+                class="form-control"
+                #serverContentInput>
+        <br>
+        <button
+                class="btn btn-primary"
+                (click)="onAddServer(serverNameInput, serverContentInput)">Add Server
+        </button>
+        <button
+                class="btn btn-primary"
+                (click)="onAddBlueprint()">Add Server Blueprint
+        </button>
+    </div>
+</div>
