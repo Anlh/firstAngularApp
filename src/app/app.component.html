@@ -14,7 +14,7 @@
                     [name]="serverElement.name"
             >
                 <!-- This will be projected to the ng-content directive placed in the server-element component -->
-                <p>
+                <p #contentParagraph>
                     <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
                     <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
                 </p>
