@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Recipe} from '../../recipe.model';
 
 @Component({
-  selector: 'app-recipe-item',
-  templateUrl: './recipe-item.component.html',
-  styleUrls: ['./recipe-item.component.css']
+    selector: 'app-recipe-item',
+    templateUrl: './recipe-item.component.html',
+    styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent implements OnInit {
+    @Input() recipe = Recipe; // This decorator allow us to publish this data outside of the component
+    @Output() recipeItemFired = new EventEmitter<void>();
 
-  constructor() { }
 
-  ngOnInit() {
-  }
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
+
+    onRecipeItemClicked() {
+        this.recipeItemFired.emit();
+    }
 
 }
