@@ -6,9 +6,8 @@ import {Component} from '@angular/core';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    loadedFeature = 'recipes';
-
-    onMenuLinkClicked(linkMenuClicked: string) {
-        this.loadedFeature = linkMenuClicked;
-    }
+    // numbers = [1, 2, 3, 4, 5];
+    oddNumber = [1, 3, 5];
+    evenNumber = [2, 4];
+    onlyOdd = false;
 }
