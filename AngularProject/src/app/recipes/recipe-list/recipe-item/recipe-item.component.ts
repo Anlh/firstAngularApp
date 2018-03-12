@@ -1,5 +1,7 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+
 import {Recipe} from '../../recipe.model';
+import {RecipeService} from "../../services/Recipe.service";
 
 @Component({
     selector: 'app-recipe-item',
@@ -7,18 +9,17 @@ import {Recipe} from '../../recipe.model';
     styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent implements OnInit {
-    @Input() recipe = Recipe; // This decorator allow us to publish this data outside of the component
-    @Output() recipeItemFired = new EventEmitter<void>();
+    @Input() recipe: Recipe; // This decorator allow us to publish this data outside of the component
 
 
-    constructor() {
+    constructor(private recipeService: RecipeService) {
     }
 
     ngOnInit() {
     }
 
-    onRecipeItemClicked() {
-        this.recipeItemFired.emit();
+    onSelected() {
+        this.recipeService.recipeSelected.emit(this.recipe);
     }
 
 }
